@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>ConverTo: degrees</title>
+</head>
+<body>
+    <header class="header center">
+        <div class="container container_header">
+            <a href="./index.html" class="logo">ConverTo:</a>
+            <nav class="navbar">
+                <a href="./degrees.html" class="navbar__link">Degrees</a>
+                <a href="./math.html" class="navbar__link">Math</a>
+                <a href="#" class="navbar__link">Currency</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main center">
+        <div class="container">
+            <form action="#" class="convert-form">
+                <input id="degreesVal" placeholder="Enter Celsius..." type="text"  class="convert-form__input input" autocomplete="off">
+                <button type="submit" class="convert-form__button input" onclick="countForeignheit()">ConverTo:</button>
+            </form>
+            <fieldset onclick="checkRadio()">
+                <input id="foriegnheit_radio" type="radio" value="for" name="deg_switch" checked/>
+                <label for="for">Foreignheit</label>    
+                <input id="celsius_radio" type="radio" value="cels" name="deg_switch"/>
+                <label for="cels">Celsius</label>
+            </fieldset>
+            <div class="foreignheit">
+                <p id="foreignheit-header" class="foreingheit__header">Foreignheit:</p>
+                <p id="result" class="foreignheit__res"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./count.js"></script>
+</body>
+</html>

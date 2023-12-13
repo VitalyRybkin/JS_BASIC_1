@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>ConverTo: degrees</title>
+</head>
+<body>
+    <header class="header center">
+        <div class="container container_header">
+            <a href="./index.html" class="logo">ConverTo:</a>
+            <nav class="navbar">
+                <a href="./degrees.html" class="navbar__link">Degrees</a>
+                <a href="./math.html" class="navbar__link">Math</a>
+                <a href="#" class="navbar__link">Currency</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main center">
+        <div class="container">
+            <form action="#" class="convert-form">
+                <input id="degreesVal" placeholder="Enter Degrees..." type="text"  class="convert-form__input input" autocomplete="off">
+                <button type="submit" class="convert-form__button input" onclick="countRadians()">ConverTo:</button>
+            </form>
+            <fieldset onclick="checkRadians()">
+                <input id="radians_radio" type="radio" value="rad" name="deg_switch" checked/>
+                <label for="rad">Radians</label>    
+                <input id="degrees_radio" type="radio" value="deg" name="deg_switch"/>
+                <label for="deg">Degrees</label>
+            </fieldset>
+            <div class="radians">
+                <p id="radians-header">Radians:</p>
+                <p id="radians-result"></p>
+            </div>
+
+            <form action="#" class="convert-form">
+                <input id="sinDegreesVal" placeholder="Enter Degrees..." type="text"  class="convert-form__input input" autocomplete="off">
+                <button type="submit" class="convert-form__button input" onclick="countSin()">ConverTo:</button>
+            </form>
+            <fieldset onclick="checkSin()">
+                <input id="sin-radio" type="radio" value="sin" name="sin_switch" checked/>
+                <label for="sin">Sinus</label>    
+                <input id="cos-radio" type="radio" value="cos" name="sin_switch"/>
+                <label for="cos">Cosinus</label>   
+                <input id="tan-radio" type="radio" value="tan" name="sin_switch"/>
+                <label for="tan">Tangens</label>
+                <input id="cot-radio" type="radio" value="cot" name="sin_switch"/>
+                <label for="cot">Cotangens</label>
+            </fieldset>
+            <div class="sin">
+                <p id="sin-header">Sinus:</p>
+                <p id="sin-result"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./count.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@import 'vars';
+
+.input {
+    border: none;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+  
+.convert-form {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 5px;
+
+    &__input {
+        padding: 0 22px;
+        width: 400px;
+        border: 1px solid #000;
+        border-radius: 5px 0 0 5px;
+        background-color: transparent;
+        font-size: large;
+    }
+
+    &__input:focus {
+        outline: none;
+    }
+
+    &__button {
+        width: 150px;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background-color: $siteBG;
+        color: #000;
+        font-size: large;
+        border-radius: 0 5px 5px 0;
+        transition: ease-in 0.3s;  
+    }
+
+    &__button:hover {
+        background-color: transparent;
+        cursor: pointer;
+        background-color: $siteBGlight;
+        color: #000;
+    }
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    color: #000;
+}
+
+label {
+    margin-right: 20px;
+    padding: 2px 0;
+    font-size:larger;
+}
+
+input[type="radio"] {
+    appearance: none;
+    margin-right: 10px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: $siteBGlight;
+    transition: all ease-in 0.2s;
+}
+
+input[type="radio"]:checked {
+    background-color: $siteBG;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+.radians, .sin, .foreignheit {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    font-family: Lato;
+    font-size:x-large;
+
+    & p {
+        margin: 10px 0;
+    }
+}
+
+@media(max-width: 424px) {
+    .container {
+        padding: 0 !important;
+        margin: 0 10px;
+    }
+}
+
+
+

@@ -1,0 +1,155 @@
+@import 'degrees';
+@import 'vars';
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  header {
+    background: $siteBG;
+  }
+  
+  main {
+    flex-grow: 1;
+    background: $siteBGlight;
+  }
+  
+  footer {
+    flex-shrink: 0;
+    background: black;
+  }
+
+  .center {
+    padding: 0 calc(50% - 600px);
+  }
+
+  .container {
+    padding: 0 50px;
+
+    &_header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_main {
+      padding-top: 100px;
+    }
+  }
+
+  .logo {
+    padding: 30px 20px;
+    width: min-content;
+    font-size: 88px;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: start;
+    padding: 0 50px;
+    margin-left: 15%;
+
+    &__link {
+        position: relative;
+        padding: 1rem 0;
+        font-size:xx-large;
+    }
+
+    &__link:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    &__link::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #000;
+        width: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s;
+      }
+
+      &__link:hover:after {
+        width: 100%;
+      }
+  }
+
+  .main-slogan{
+    padding: 10px 50px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 100px;
+  }
+
+  .main-slogan:last-child{
+    text-align: right;
+  }
+
+  .main-slogan span {
+    padding-top: 50px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 100px;
+  }
+
+  @media(max-width: 1023px) {
+
+    .main-slogan, .main-slogan span {
+      font-size: 70px;
+    }
+  }
+
+  @media(max-width: 767px) {
+
+    .container_header {
+      align-items: center;
+    }
+
+    .main-slogan, .main-slogan span {
+      font-size: 45px;
+      padding: 10px;
+    }
+
+    .logo {
+      font-size: 68px;
+    }
+
+    .navbar {
+      justify-content: center;
+      margin-left: 0;
+
+      &__link {
+        font-size: medium;
+      }
+    }
+  }
+
+  @media(max-width: 424px) {
+    .navbar {
+      padding: 0 40px;
+    }
+
+    .main-slogan, .main-slogan span {
+      font-size: 35px;
+      margin-left: 0;
+    }
+  }
