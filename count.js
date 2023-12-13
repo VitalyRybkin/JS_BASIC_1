@@ -49,7 +49,7 @@ function checkRadians() {
         document.getElementById('degreesVal').placeholder = 'Enter degrees...';
     }
 
-    document.getElementById('radians-result').innerText = '';
+    countRadians();
 }
 
 function checkSin() {
