@@ -27,11 +27,15 @@
                 <input id="degreesVal" placeholder="Enter Celsius..." type="text"  class="convert-form__input input" autocomplete="off">
                 <button type="submit" class="convert-form__button input" onclick="countForeignheit()">ConverTo:</button>
             </div>
-            <fieldset onclick="checkRadio()">
-                <input id="foriegnheit_radio" type="radio" value="for" name="deg_switch" checked/>
-                <label for="for">Foreignheit</label>    
-                <input id="celsius_radio" type="radio" value="cels" name="deg_switch"/>
-                <label for="cels">Celsius</label>
+            <fieldset class="fieldset" onclick="checkRadio()">
+                <div class="fieldset__div">
+                    <input id="foriegnheit_radio" type="radio" value="for" name="deg_switch" checked/>
+                    <label for="for">Foreignheit</label>   
+                </div>
+                <div class="fieldset__div">
+                    <input id="celsius_radio" type="radio" value="cels" name="deg_switch"/>
+                    <label for="cels">Celsius</label>
+                </div>
             </fieldset>
             <div class="foreignheit">
                 <p id="foreignheit-header" class="foreingheit__header">Foreignheit:</p>

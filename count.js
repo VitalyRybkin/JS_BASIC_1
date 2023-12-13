@@ -32,7 +32,7 @@ function checkRadio() {
 function countRadians() {
     let getData = Number(document.getElementById("degreesVal").value);
     if (getData == null || getData == "" || Number.isNaN(getData)) {
-        return document.getElementById("radians-result").innerHTML = "No degrees entered ...";
+        return document.getElementById("radians-result").innerHTML = "No value entered ...";
     }
     
     if(document.getElementById('radians_radio').checked) document.getElementById("radians-result").innerHTML = (getData * Math.PI / 180).toFixed(5) + ' radians';

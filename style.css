@@ -141,7 +141,7 @@ footer {
   flex-direction: column;
 }
 .container_main {
-  padding-top: 100px;
+  padding-top: 150px !important;
 }
 
 .logo {
