@@ -39,10 +39,14 @@
   color: #000;
 }
 
-fieldset {
+.fieldset {
   display: flex;
+  flex-wrap: wrap;
   border: none;
   color: #000;
+}
+.fieldset__div {
+  display: flex;
 }
 
 label {
@@ -84,7 +88,10 @@ input[type=radio]:hover {
   margin: 10px 0;
 }
 
-@media (max-width: 424px) {
+@media (max-width: 767px) {
+  .fieldset__div {
+    width: 170px;
+  }
   .container {
     padding: 0 !important;
     margin: 0 10px;

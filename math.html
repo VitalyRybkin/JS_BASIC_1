@@ -27,11 +27,15 @@
                 <input id="degreesVal" placeholder="Enter Degrees..." type="text"  class="convert-form__input input" autocomplete="off">
                 <button type="submit" class="convert-form__button input" onclick="countRadians()">ConverTo:</button>
             </div>
-            <fieldset onclick="checkRadians()">
-                <input id="radians_radio" type="radio" value="rad" name="deg_switch" checked/>
-                <label for="rad">Radians</label>    
-                <input id="degrees_radio" type="radio" value="deg" name="deg_switch"/>
-                <label for="deg">Degrees</label>
+            <fieldset  class="fieldset" onclick="checkRadians()">
+                <div class="fildset__div">
+                    <input id="radians_radio" type="radio" value="rad" name="deg_switch" checked/>
+                    <label for="rad">Radians</label> 
+                </div>
+                <div class="fieldset__div">
+                    <input id="degrees_radio" type="radio" value="deg" name="deg_switch"/>
+                    <label for="deg">Degrees</label>
+                </div>
             </fieldset>
             <div class="radians">
                 <p id="radians-header">Radians:</p>
@@ -42,15 +46,23 @@
                 <input id="sinDegreesVal" placeholder="Enter Degrees..." type="text"  class="convert-form__input input" autocomplete="off">
                 <button type="submit" class="convert-form__button input" onclick="countSin()">ConverTo:</button>
             </div>
-            <fieldset onclick="checkSin()">
-                <input id="sin-radio" type="radio" value="sin" name="sin_switch" checked/>
-                <label for="sin">Sinus</label>    
-                <input id="cos-radio" type="radio" value="cos" name="sin_switch"/>
-                <label for="cos">Cosinus</label>   
-                <input id="tan-radio" type="radio" value="tan" name="sin_switch"/>
-                <label for="tan">Tangens</label>
-                <input id="cot-radio" type="radio" value="cot" name="sin_switch"/>
-                <label for="cot">Cotangens</label>
+            <fieldset class="fieldset" onclick="checkSin()">
+                <div class="fieldset__div">
+                    <input id="sin-radio" type="radio" value="sin" name="sin_switch" checked/>
+                    <label for="sin">Sinus</label> 
+                </div>   
+                <div class="fieldset__div">
+                    <input id="cos-radio" type="radio" value="cos" name="sin_switch"/>
+                    <label for="cos">Cosinus</label>  
+                </div>
+                <div class="fieldset__div">
+                    <input id="tan-radio" type="radio" value="tan" name="sin_switch"/>
+                    <label for="tan">Tangens</label>
+                </div>
+                <div class="fieldset__div">
+                    <input id="cot-radio" type="radio" value="cot" name="sin_switch"/>
+                    <label for="cot">Cotangens</label>
+                </div>
             </fieldset>
             <div class="sin">
                 <p id="sin-header">Sinus:</p>
